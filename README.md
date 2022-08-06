@@ -22,14 +22,15 @@ The required packages are:
       * To monitor more than one subreddit, concatenate both sub names with "+" as one string
    3. `keywords_list`: list of strings (lowercase), keywords to find in title
    4. `keyword_search_type`: string, either "all" or "any"
-3. Run script with `> python driver.py`
+3. Run script with  
+    `> python driver.py`
 
 ## License
 
-MIT License
+MIT License  
 Copyright (c) 2021 petertadrous
 
 ## Contact
 
-Peter Tadrous - petertadrous@gmail.com
-Project Link: https://github.com/petertadrous/subreddit-notifications
+Peter Tadrous - petertadrous@gmail.com  
+Project Link: <https://github.com/petertadrous/subreddit-notifications>
