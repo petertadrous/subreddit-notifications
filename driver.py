@@ -1,7 +1,4 @@
-import pandas as pd
-import numpy as np
-import time
-from typing import Dict, List
+from typing import List
 
 
 from SubredditConnect import stream_new_posts
@@ -12,8 +9,7 @@ def track_new_posts(
         secret_file: str,
         subreddit_name: str,
         kwd_list: List,
-        kwd_search_type: str,
-        get_per_hour: int = 30
+        kwd_search_type: str
 ) -> None:
     
     found_post_fstr = 'New Deal Found!\nTitle: "{t}"\nLink: "{l}"\nMatched: {k}'
@@ -49,12 +45,10 @@ if __name__ == "__main__":
     subreddit_name = 'buildapcsales'
     keywords_list = ['42','oled','monitor']
     keyword_search_type = 'all'
-    get_per_hour = 30
     
     track_new_posts(
         secret_file=secret_file,
         subreddit_name=subreddit_name,
         kwd_list=keywords_list,
         kwd_search_type=keyword_search_type,
-        get_per_hour=get_per_hour
     )

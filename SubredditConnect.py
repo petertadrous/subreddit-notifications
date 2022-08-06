@@ -1,7 +1,6 @@
 import praw
-import pandas
 import yaml
-from typing import Dict, Iterator, List
+from typing import Dict, Iterator
 
 
 def load_creds(
